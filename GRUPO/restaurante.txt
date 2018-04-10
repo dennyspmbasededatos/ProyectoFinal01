@@ -1,0 +1,34 @@
+create database restaurante
+go 
+
+use restaurante
+go
+
+create table cliente
+(
+idcliente primary key,
+nombre varchar(50),
+apellido varchar(50)
+);
+
+create table mesa
+(
+idmesa int primary key,
+numeroMesa varchar(50),
+idcliente varchar(50)
+);
+
+create table plato
+(
+idplato int primary key,
+nombre varchar(50),
+precio decimal(10,2)
+);
+
+create table factura
+(
+idfactura int primary key,
+idcliente int,
+idplato int,
+total decimal(10,2)
+);

@@ -1,0 +1,25 @@
+Create database Empresa
+go
+
+use Empresa
+go
+
+create table empleado
+(
+idempleado int primary key,
+nombre vachar(50),
+cargo varchar(50),
+cedula varchar(25) 
+);
+
+create table departamento
+(
+iddepar int primary key,
+nombre varchar(100)
+);
+
+create table EmpleadoDepartemento
+(
+iddepar int,
+idempleado int
+);
